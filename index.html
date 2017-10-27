@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Best website ever!</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+
+<script>
+  function buttonSpinner() {
+    if ( document.getElementById("image1").classList.contains('spinimageright') )
+      document.getElementById("image1").classList.remove('spinimageright');
+      else ( document.getElementById("image1").classList.add('spinimageright'));
+
+    if ( document.getElementById("image2").classList.contains('spinimageleft') )
+      document.getElementById("image2").classList.remove('spinimageleft');
+      else ( document.getElementById("image2").classList.add('spinimageleft'));
+
+  }
+  </script>
+
+  </head>
+  <body>
+    <section class="section has-text-centered columns">
+      <img src="./piechart.png" id=image1 class="column roundImage" style="width">
+      <div>
+        <h1 class="column header">Header</h1>
+        <button onclick="buttonSpinner()" id=btnSpin class="button" >Spin baby spin!</button>
+      </div>
+      <img src="./piechart.png" id=image2 class="column roundImage"/>
+    </section>
+  </body>
+</html>

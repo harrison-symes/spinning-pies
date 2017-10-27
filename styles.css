@@ -1,0 +1,29 @@
+body {
+  background-color: Tomato;
+  background-size:contain;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+.roundImage !important {
+  width:400px;
+  border-radius: 25px;
+}
+
+.spinimageright {
+    transform-origin:50% 50%;
+    animation:2s rotateRight infinite linear;
+}
+@keyframes rotateRight{
+    100%{ transform:rotate(360deg); }
+}
+
+.spinimageleft {
+    transform-origin:50% 50%;
+    animation:4s rotateLeft infinite linear;
+}
+@keyframes rotateLeft{
+    100%{ transform:rotate(-360deg); }
+}
